@@ -82,7 +82,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <action selector="reBtnPressed:" destination="ReN-73-97y" eventType="touchUpInside" id="ZpJ-QK-dyB"/>
                                     <action selector="redBtnPressed:" destination="ReN-73-97y" eventType="touchUpInside" id="ega-Mg-pS6"/>
                                 </connections>
                             </button>

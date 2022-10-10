@@ -20,8 +20,15 @@ class ViewController: UIViewController {
     @IBAction func changeColorPressed(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController2 = storyboard.instantiateViewController(withIdentifier: "viewcontroller2") as! ViewController2
+        viewController2.delegate = self
         self.present(viewController2, animated: true, completion: nil)
     }
     
+}
+
+extension ViewController: ViewController2Delegate {
+    func changeBgColor(color: UIColor) {
+        self.view.backgroundColor = color
+    }
 }
 
